@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Marhey:wght@300&display=swap");
+h1,
+h2,
+a {
+  font-family: "Marhey", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
 /* SLIDESHOW */
 .fling-minislide {
   width: 100%;
@@ -33,6 +44,54 @@
 }
 .fling-minislide img:nth-child(4) {
   animation-delay: 15s;
+}
+
+@media (max-width: 1200px) {
+  .fling-minislide {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fling-minislide {
+    height: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .fling-minislide {
+    height: 450px;
+  }
+}
+
+@media (max-width: 700px) {
+  .fling-minislide {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fling-minislide {
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .fling-minislide {
+    height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .fling-minislide {
+    height: 170px;
+  }
+}
+
+@media (max-width: 300px) {
+  .fling-minislide {
+    height: 150px;
+  }
 }
 
 /* NAVIGACIJA */
@@ -94,11 +153,32 @@ hr {
   .logo img {
     vertical-align: middle;
   }
+
+  .navHelper {
+    padding-top: 8%;
+  }
+
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #nav li {
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 500px) {
   #nav li {
     font-size: 0.6em;
+  }
+
+  .navHelper {
+    padding-top: 15%;
   }
 }
 
@@ -179,6 +259,10 @@ hr {
   text-align: center;
 }
 
+.main .imageDiv {
+  margin-bottom: 50px;
+}
+
 .main img {
   max-width: 80%;
 }
@@ -187,11 +271,6 @@ hr {
   font-size: 1.5em;
   font-weight: bold;
   color: #e26ee5;
-}
-
-.main .imageDiv {
-  min-height: 200px;
-  margin-bottom: 20px;
 }
 
 .main p {
@@ -229,6 +308,10 @@ hr {
 
 @media (max-width: 991px) {
   .main .imageDiv {
+    margin-bottom: 0px;
+  }
+
+  .main .imageDiv {
     height: auto;
   }
 
@@ -241,7 +324,7 @@ hr {
   .main p {
     font-size: 1.2em;
     margin-top: 10px;
-    text-align: left;
+    text-align: center;
   }
 
   .main img {
@@ -290,7 +373,7 @@ hr {
 .mainDogs h1 {
   font-weight: bold;
   color: #e26ee5;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .mainDogs .container-fluid .row .col-sm-12 {
@@ -310,9 +393,12 @@ hr {
   font-weight: bold;
   color: #e26ee5;
   margin: 20px;
+  margin-bottom: 50px;
 }
 
 .transition {
+  color: black;
+  font-weight: bold;
   margin-top: -10%;
   font-size: 1.2em;
   transition: 0.5s ease;
@@ -325,11 +411,11 @@ hr {
   text-align: center;
 }
 
-.mainDogs .col-sm-12:hover img {
+.mainDogs .col-12:hover img {
   opacity: 0.3;
 }
 
-.mainDogs .col-sm-12:hover .transition {
+.mainDogs .col-12:hover .transition {
   opacity: 1;
 }
 
