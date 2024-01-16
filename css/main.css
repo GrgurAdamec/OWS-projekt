@@ -1,16 +1,17 @@
 /* SLIDESHOW */
 .fling-minislide {
-  width: 350px;
+  width: 100%;
   height: 700px;
   overflow: hidden;
   position: relative;
 }
+
 .fling-minislide img {
   position: absolute;
   animation: fling-minislide 20s infinite;
   opacity: 0;
   width: 100%;
-  height: auto;
+  max-height: auto;
 }
 
 @keyframes fling-minislide {
@@ -45,11 +46,12 @@ body {
   margin: 0 auto;
   padding-top: 3%;
   padding-bottom: 3%;
+  justify-content: space-between;
 }
 
 .logo {
-  width: 30%;
   text-align: left;
+  align-items: center;
 }
 
 .logo img {
@@ -80,29 +82,23 @@ hr {
   border: 1px solid #e26ee5;
   width: 100%;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 @media (max-width: 992px) {
   .logo {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .logo img {
-    width: 30%;
+    vertical-align: middle;
   }
+}
 
-  #nav ul {
-    text-align: center;
-  }
-
+@media (max-width: 500px) {
   #nav li {
-    display: inline-block;
-    margin: 30px;
-    font-size: 2vw;
-    font-weight: bold;
-    color: #471499;
-    transition: all 0.3s ease-in-out;
+    font-size: 0.6em;
   }
 }
 
@@ -118,13 +114,13 @@ hr {
 .footerKontakt {
   padding: 30px;
   padding-left: 60px;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 .footerNavigacija {
   padding: 30px;
   padding-right: 60px;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   text-align: right;
 }
 
@@ -132,6 +128,30 @@ hr {
   text-decoration: none;
   color: white;
   display: block;
+}
+
+@media (max-width: 1000px) {
+  .footerKontakt {
+    font-size: 1em;
+  }
+
+  .footerNavigacija {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerKontakt {
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 0.5em;
+  }
+
+  .footerNavigacija {
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 0.5em;
+  }
 }
 
 /* HOMEPAGE */
@@ -167,11 +187,11 @@ hr {
   font-size: 1.5em;
   font-weight: bold;
   color: #e26ee5;
-  margin-top: 70px;
 }
 
 .main .imageDiv {
-  height: 200px;
+  min-height: 200px;
+  margin-bottom: 20px;
 }
 
 .main p {
@@ -183,6 +203,10 @@ hr {
 .novosti h1 {
   font-weight: bold;
   margin-bottom: 50px;
+}
+
+.novosti h2 {
+  text-align: left;
 }
 
 .novosti img {
@@ -197,6 +221,57 @@ hr {
 
 .novosti .row {
   margin-bottom: 50px;
+}
+
+.main {
+  padding-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .main .imageDiv {
+    height: auto;
+  }
+
+  .main h2 {
+    font-size: 1.5em;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .main p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .main img {
+    max-height: 200px;
+  }
+
+  .novosti h1 {
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .novosti h2 {
+    margin-top: 10px;
+  }
+
+  .novosti img {
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+
+  .novosti p {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .novosti .row {
+    margin-bottom: 50px;
+  }
 }
 
 /* UDOMI.HTML */
@@ -373,6 +448,7 @@ hr {
   color: black;
   font-size: 1.5em;
   font-weight: bold;
+  text-align: left;
 }
 
 .kontaktKontakti {
@@ -403,7 +479,6 @@ hr {
 }
 
 .kontaktKontakti hr {
-  margin: 20px;
   margin: 10px;
 }
 .mapa {
@@ -422,4 +497,26 @@ hr {
   color: black;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .kontaktKontakti a {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .kontaktKontakti p {
+    font-size: 0.7em;
+    margin: 10px;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
+  }
+
+  .kontaktKontakti button {
+    margin-bottom: 20px;
+  }
 }
