@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Marhey:wght@300&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+}
+
 h1,
 h2,
 a {
   font-family: "Marhey", sans-serif;
-}
-
-p {
-  font-family: "Lato", sans-serif;
 }
 
 /* SLIDESHOW */
@@ -60,13 +60,13 @@ p {
 
 @media (max-width: 800px) {
   .fling-minislide {
-    height: 450px;
+    height: 400px;
   }
 }
 
 @media (max-width: 700px) {
   .fling-minislide {
-    height: 400px;
+    height: 350px;
   }
 }
 
